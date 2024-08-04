@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package org.example.proto;
+
+option java_multiple_files = true;
+option java_package = "org.example.proto";
+
+import "google/protobuf/timestamp.proto";
+
+message DataGrpcDto {
+  google.protobuf.Timestamp date = 1;
+  int32 intCount = 2;
+  string test = 3;
+}
